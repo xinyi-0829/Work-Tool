@@ -83,7 +83,6 @@ export default function Home() {
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">课程安排表</h1>
         <button
           onClick={exportToCSV}
           className="mb-6 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors"
