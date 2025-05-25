@@ -102,8 +102,8 @@ export default function Home() {
             <table className="min-w-full bg-white border border-gray-300">
               <thead>
                 <tr>
-                  <th className="px-6 py-3 border-b text-left">项目</th>
-                  <th className="px-6 py-3 border-b text-left">阶段</th>
+                  <th className="px-6 py-3 border-b text-left">学生</th>
+                  <th className="px-6 py-3 border-b text-left">老师</th>
                   <th className="px-6 py-3 border-b text-left">标题</th>
                 </tr>
               </thead>
