@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface ScheduleData {
   Project: string;
@@ -83,13 +84,17 @@ export default function Home() {
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
-        <button
-          onClick={exportToCSV}
-          className="mb-6 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors"
-          disabled={data.length === 0}
-        >
-          导出CSV
-        </button>
+        <div className="flex justify-between items-center mb-8">
+          <button
+            onClick={exportToCSV}
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            导出 CSV
+          </button>
+          <Link href="/fee" className="text-blue-600 hover:text-blue-800">
+            查看费用计算
+          </Link>
+        </div>
         {data.length === 0 ? (
           <div className="text-center text-gray-500 mt-4">暂无数据</div>
         ) : (
