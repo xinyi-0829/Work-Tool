@@ -62,7 +62,7 @@ async function fetchAllData(apiUrl: string, apiToken: string): Promise<ApiData[]
 export async function GET() {
   try {
     const apiUrl = process.env.API_URL || 'https://tuition-work.onrender.com/api/data:list';
-    const apiToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInRlbXAiOnRydWUsInNpZ25JblRpbWUiOjE3NDgwNjczNzczOTksImlhdCI6MTc0ODE1NDA1OCwiZXhwIjoxNzQ4MjQwNDU4LCJqdGkiOiJjOTEwZjliMC01ZmFjLTQ1MGYtOWFlOS04NjdjNjk3ZDU0YjIifQ.VwtBrYRFUEByL0BehvHDViW8d2ygVkOOEX50r2m9p8o';
+    const apiToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVOYW1lIjoicm9vdCIsImlhdCI6MTc0ODUwMjc3MywiZXhwIjozMzMwNjEwMjc3M30.2FKwtKAzR5EVRj0VUbmxWEzuTPja1dVEDkP1GkzXsYc';
 
     if (!apiToken) {
       throw new Error('API token is not configured');
